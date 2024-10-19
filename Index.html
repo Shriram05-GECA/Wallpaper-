@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Wallpapers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Car Wallpapers</h1>
+    </header>
+    <div class="gallery">
+        <!-- Wallpaper Images -->
+        <!-- Images will be added dynamically -->
+    </div>
+    <script>
+        // Generate 100 wallpapers dynamically
+        const gallery = document.querySelector('.gallery');
+        for (let i = 1; i <= 100; i++) {
+            const img = document.createElement('img');
+            img.src = `images/wallpaper${i}.jpg`;
+            img.alt = `Wallpaper ${i}`;
+            gallery.appendChild(img);
+        }
+    </script>
+</body>
+</html>
